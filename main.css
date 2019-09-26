@@ -1,0 +1,54 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+
+.navBar {
+    align-self: flex-end;
+    width: 50px;
+    height: 50px;
+    background: gray;
+    border: 3px solid black;
+    margin-bottom: 30px;
+}
+
+.name {
+    justify-content: center;
+    width: auto;
+    height: 150px;
+    background: gray;
+    border: 3px solid black;
+    margin-bottom: 125px;
+}
+
+.intro {
+    background: gray;
+    border: 3px solid black;
+    height: 100px;
+    width: auto;
+}
+
+.bioDiv {
+    background: gray;
+    border: 3px solid black;
+    height: 350px;
+    width: auto;
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 425px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+;
