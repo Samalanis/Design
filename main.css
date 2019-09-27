@@ -44,11 +44,23 @@
 }
 
 
-/* Tablet */
-@media only screen and (min-width: 425px) {
+/* desktop */
+@media  screen and (min-width: 768px) {
     .wrapper {
         width: 100%;
     }
+    .navBar {
+        width: 100%;
+    }
+    .intro {
+        width: 100%;
+    }
+    .name {
+        display: none;
+    }
+    .bioDiv {
+        width: 100%;
+        margin-top: 100px;
+        height: 500px;
+    }
 }
-
-;
