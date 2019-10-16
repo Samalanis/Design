@@ -1,66 +1,146 @@
 ﻿* {
     box-sizing: border-box;
-}
-
-.wrapper {
-    display: flex;
-    position: relative;
-    width: 90%;
     margin: 0 auto;
-    flex-direction: column;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
 }
 
 
-.navBar {
-    align-self: flex-end;
-    width: 50px;
-    height: 50px;
-    background: gray;
-    border: 3px solid black;
-    margin-bottom: 30px;
+
+
+
+
+#burgerIcon {
+height:60px;
+right:80%;
+background-color:white;
+position:relative;
+
 }
 
-.name {
-    justify-content: center;
-    width: auto;
-    height: 150px;
-    background: gray;
-    border: 3px solid black;
-    margin-bottom: 125px;
+.burgerWrapper {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    background-color: grey;
+    top: 0;
+    z-index: -1;
 }
 
-.intro {
-    background: gray;
-    border: 3px solid black;
-    height: 100px;
-    width: auto;
+navLinks {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
 }
 
-.bioDiv {
-    background: gray;
-    border: 3px solid black;
+    nav a {
+        display: none;
+        color: rgb(255, 255, 255);
+        z-index: 1;
+    }
+
+.sam {
+    width: 100%;
     height: 350px;
-    width: auto;
+    background-color: grey;
+    position: relative;
+    margin-top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+.photoDiv {
+    display: block;
+    text-align:center;
+    border-radius: 10%;
+    width: 150px;
+    height: 200px;
+    position: relative;
+    background-color: darkgray;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25px;
+}
+#bottomLinks {
+    width:100%;
+    height: 150px;
+    background-color: darkgray;
+}
+
+
+
+
+
 
 
 /* desktop */
-@media  screen and (min-width: 768px) {
-    .wrapper {
-        width: 100%;
+@media screen and (min-width: 768px) {
+    #burgerIcon {
+        height: 60px;
+        margin-left: 80px;
+        background-color: white;
+        position: relative;
     }
-    .navBar {
-        width: 100%;
+
+    .sam {
+        margin-bottom: 0;
     }
-    .intro {
-        width: 100%;
+
+    .photoDiv {
+        width: 350px;
+        height: 500px;
+        bottom: 0%;
     }
-    .name {
+}
+
+@media screen and (min-width: 1024px) {
+    .sam {
+        margin-bottom: 0;
+    }
+
+    .photoDiv {
+        width: 350px;
+        height: 500px;
+        bottom: 50%;
+    }
+
+    nav {
+        position: absolute;
+        display: inline;
+    }
+
+    #burgerIcon {
         display: none;
     }
-    .bioDiv {
+
+    .burgerWrapper {
+        position: relative;
+        margin: 0 auto;
+        width: auto;
+        height: 60px;
+        background-color: #000000;
+    }
+
+    .burgerMenu {
+        display: block;
+        background-color: black;
         width: 100%;
-        margin-top: 100px;
-        height: 500px;
+        height: 125px;
+
+    }
+
+    nav a {
+        padding: 15px;
+        display: inline-block;
     }
 }
