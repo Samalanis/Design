@@ -16,59 +16,55 @@
 }
 
 .wrapperMain {
-    position: relative;
-    font-size: 2vh;
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    height: 250px;
     display: flex;
+    flex-direction: column;
+}
+
+    .wrapperMain header {
+        margin: 25px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .wrapperMain h1 {
+        color: red;
+        font-size: 28px;
+    }
+
+    .wrapperMain h2 {
+        margin-top: 25px;
+        font-size: 22px;
+    }
+
+#contactPText {
+    margin-left: 25px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-right: 25px;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 2.5px;
+    letter-spacing: .5px;
+}
+
+#contactLinks {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    margin-top: 120px;
+    align-content: space-between;
 }
 
-.contactLinks {
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    margin-left: 15px;
-}
-
-    .contactLinks li a {
+    #contactLinks ul {
         text-decoration: none;
         list-style: none;
-        color: grey;
-        font-size: 2vh;
     }
 
-#footerLinks {
-    background-color: black;
-    width: 100%;
-    height: 400px;
-    font-size: 28px;
-    font-family: 'Poppins', sans-serif;
-    position: absolute;
-    bottom: 0;
-}
-
-    #footerLinks ul li a {
-        color: white;
-        font: white;
-        text-decoration: none;
-        list-style: none;
-        display: block;
-    }
-
-        #footerLinks ul li a:hover {
-            color: red;
+        #contactLinks ul li {
+            margin-top: 20px;
+            color: black;
         }
 
-    #footerLinks ul li {
-        display: inline;
-        bottom: 0;
-        left: 45%;
-    }
+            #contactLinks ul li a {
+                color: black;
+            }
 
 #mailLogoImg {
     width: 80px;
@@ -92,7 +88,7 @@
 .projectOne {
     background-image: url('https://i.imgur.com/cwDW4u0.png');
     width: 100%;
-    height: 325px;
+    height: 300px;
     background-size: cover;
     border-bottom: solid black;
     background-position: center;
@@ -113,9 +109,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#projectIcons {
+    margin-left: 25px;
+    margin-bottom: 10px;
+    word-spacing: 2px;
+}
+
 #titleAndLinks ul {
     list-style: none;
-    margin: 0 12.5px;
+    margin: 25px;
+    padding: 0;
 }
 
     #titleAndLinks ul li {
@@ -125,7 +128,7 @@
     }
 
         #titleAndLinks ul li a {
-            color: grey;
+            color: #515151;
             font-family: 'Roboto', sans-serif;
             outline: solid;
             outline-color: rgba(173, 216, 230, 0.521);
@@ -154,7 +157,7 @@
 
 #comingSoon {
     margin-left: 50px;
-    color: rgba(128, 128, 128, 0.815);
+    color: #515151;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -183,12 +186,12 @@
     background-image: url('https://i.imgur.com/k39kEWk.jpg');
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 400px;
 }
 
 .aboutMe {
     height: 500px;
-    margin: 50px;
+    margin: 15px;
     text-align: left;
     margin-bottom: 100px;
 }
@@ -206,7 +209,7 @@
     margin-bottom: 100px;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
-    color: grey;
+    color: #515151;
     font-weight: normal;
 }
 
@@ -221,7 +224,7 @@
 #skills {
     text-align: left;
     color: rgb(94, 94, 94);
-    margin: 50px;
+    margin: 25px;
     display: block;
 }
 
@@ -250,9 +253,9 @@
         color: pink;
     }
 
-#skills p {
+#skills h2 {
     display: block;
-    margin: 20px 0;
+    font-size: 16px;
 }
 
 
@@ -330,6 +333,7 @@
     left: -0;
     display: none;
     margin-bottom: 100px;
+    margin-left: 2px;
     overflow: hidden;
     border-radius: 12px;
 }
@@ -346,7 +350,10 @@
         position: relative;
         text-decoration: none;
         color: rgb(255, 255, 255);
+        font-size: 20px;
         z-index: 1;
+        margin-top: 5px;
+        margin-left: 2px;
     }
 
         #headerNav a:hover {
@@ -359,22 +366,7 @@
 
 
 
-/*mobile*/
-@media screen and (max-width: 320px) {
-    .aboutMe {
-        margin: 15px;
-        height: auto;
-    }
 
-    .projectOne {
-        width: 100%;
-        height: 300px;
-    }
-
-    .wrapperMain {
-        z-index: -1;
-    }
-}
 
 /* desktop */
 @media screen and (min-width: 768px) {
@@ -389,6 +381,30 @@
     .projectOne {
         width: 100%;
         height: 600px;
+    }
+
+    .aboutMe {
+        margin: 50px;
+    }
+
+    .headerImg {
+        height: 450px;
+    }
+
+    #contactLinks {
+        margin-top: 80px;
+    }
+
+    .wrapperMain h1 {
+        font-size: 32px;
+    }
+
+    .wrapperMain h2 {
+        font-size: 28px;
+    }
+
+    #contactPText {
+        font-size: 18px;
     }
 }
 
@@ -438,11 +454,53 @@
     }
 
     .projectOne {
+        margin: 0 auto;
         width: 100%;
-        height: 750px;
+        height: 620px;
+        margin-top: 25px;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
-    .contactLinks {
+    #contactLinks {
         margin-top: 0;
+        margin-left: 70px;
+    }
+
+    .aboutMe {
+        margin: 50px;
+    }
+
+    .headerImg {
+        height: 550px;
+    }
+
+    .wrapperMain header {
+        margin-top: 200px;
+    }
+
+    .wrapperMain h1 {
+        text-align: center;
+        justify-content: center;
+        font-size: 44px;
+    }
+
+    .wrapperMain h2 {
+        text-align: center;
+        justify-content: center;
+        font-size: 36px;
+    }
+
+    #contactPText {
+        margin: 70px 100px;
+        font-size: 22px;
+    }
+
+    #contactLinks ul li a {
+        text-decoration: none;
+    }
+
+    #contactLinks span {
+        color: white;
     }
 }
